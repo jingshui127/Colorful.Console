@@ -22,6 +22,7 @@ Console.WriteLine("console in pink", Color.Pink);
 Console.WriteLine("console in default");
 ```
 ![Basic Example](https://github.com/tomakita/Colorful.Console/blob/master/static/basic_x.png)
+![image](https://github.com/jingshui127/Colorful.Console/assets/47803837/f0fa1c11-3a58-4d35-9c27-9b3b7db1ce98)
 
 
 # Write With Full System.Drawing.Color Support
@@ -38,6 +39,18 @@ for (int i = 0; i < 10; i++)
 }
 ```
 ![Write With Full System.Drawing.Color Support](https://github.com/tomakita/Colorful.Console/blob/master/static/rgb_x.png)
+```c#
+int g = 255;
+int b = 250;
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i, Color.FromArgb(r, g, b));
+
+    r -= 18;
+    b -= 9;
+}
+```
+![image](https://github.com/jingshui127/Colorful.Console/assets/47803837/4492f8fd-b16f-4665-877a-e9a19f73891f)
 
 
 # Format Text Using Two Colors
@@ -60,6 +73,7 @@ string[] fruits = new string[]
 Console.WriteLineFormatted(dream, Color.LightGoldenrodYellow, Color.Gray, fruits);
 ```
 ![Format Text Using Two Colors](https://github.com/tomakita/Colorful.Console/blob/master/static/formatter_x1.png)
+![image](https://github.com/jingshui127/Colorful.Console/assets/47803837/58325fee-2b13-4ff9-beef-75df413e4033)
 
 
 # Format Text Using Several Colors
@@ -82,6 +96,7 @@ Formatter[] fruits = new Formatter[]
 Console.WriteLineFormatted(dream, Color.Gray, fruits);
 ```
 ![Format Text Using Several Colors](https://github.com/tomakita/Colorful.Console/blob/master/static/formatter_x2.png)
+![image](https://github.com/jingshui127/Colorful.Console/assets/47803837/8747de35-59ed-46f9-93f7-357dd1618256)
 
 
 # Alternate Between 2 or More Colors Based on Number of Console Writes
